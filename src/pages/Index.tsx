@@ -16,84 +16,80 @@ const Index = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
-      title: 'Заявка отправлена!',
+      title: 'Спасибо за заявку!',
       description: 'Мы свяжемся с вами в ближайшее время'
     });
     setFormData({ name: '', email: '', message: '' });
   };
 
   return (
-    <div className="min-h-screen bg-white">
-      <header className="bg-white shadow-sm py-3 px-4 sticky top-0 z-50">
+    <div className="min-h-screen bg-white font-['Open_Sans']">
+      <header className="bg-white shadow-sm py-4 px-4 sticky top-0 z-50">
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-red-600">
-              <img 
-                src="https://cdn.poehali.dev/files/b42a71b1-b412-49c4-a137-8a2dbb7f4f92.jpeg" 
-                alt="Logo"
-                className="w-full h-full object-cover"
-              />
+            <div className="w-12 h-12 rounded-full bg-[#c63c3c] flex items-center justify-center">
+              <span className="text-white font-bold text-xl font-['Montserrat']">РГ</span>
             </div>
             <div>
-              <div className="font-bold text-sm text-gray-900">Rhythmigor Shop</div>
-              <div className="text-xs text-gray-600">Школа лезгинки и барабанов</div>
+              <div className="font-bold text-base text-gray-900 font-['Montserrat']">Ритмы Гор</div>
+              <div className="text-xs text-gray-600">Школа лезгинки и кавказских барабанов</div>
             </div>
           </div>
-          <Button className="bg-red-600 hover:bg-red-700 text-white px-6">
-            Главная
+          <Button className="bg-[#c63c3c] hover:bg-[#a83232] text-white px-6 font-['Montserrat']">
+            Записаться
           </Button>
         </div>
       </header>
 
-      <section className="bg-gradient-to-br from-red-700 via-red-600 to-orange-600 py-24 px-4">
-        <div className="container mx-auto max-w-3xl text-center text-white">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+      <section className="relative bg-gradient-to-r from-[#c63c3c] to-[#d04a30] text-white py-32 px-4 overflow-hidden">
+        <div className="container mx-auto text-center relative z-10 max-w-4xl">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 font-['Montserrat'] leading-tight">
             Почувствуй<br />
-            <span className="text-6xl md:text-7xl">Rhythms Rigor</span>
+            <span className="text-6xl md:text-8xl">Ритмы Гор</span>
           </h1>
-          <p className="text-lg md:text-xl mb-8 opacity-95">
+          <p className="text-xl md:text-2xl mb-10 opacity-95 leading-relaxed">
             Изучи лезгинку и кавказские барабаны с лучшими преподавателями.<br />
-            Присоединяйся к нашему сообществу танца и музыки!
+            Присоединяйся к нашему сообществу традиционной культуры!
           </p>
-          <div className="max-w-md mx-auto">
+          <div className="max-w-lg mx-auto">
             <Input 
-              placeholder="Имя и Фамилия"
-              className="bg-white/95 text-gray-900 border-0 h-12"
+              placeholder="Введите ваше имя"
+              className="bg-white text-gray-900 border-0 h-14 text-lg rounded-lg shadow-xl"
             />
           </div>
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-gray-50">
+      <section className="py-20 px-4 bg-gray-50">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-gray-900">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-gray-900 font-['Montserrat']">
             Направления обучения
           </h2>
-          <p className="text-center text-gray-600 mb-12">
-            Подходящие занятия найдутся для каждого участника нашей школы
+          <p className="text-center text-gray-600 text-lg mb-16">
+            Выберите подходящее направление для себя или своих близких
           </p>
           
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="grid md:grid-cols-2 gap-6">
             {[
-              { title: 'Лезгинка', badge: 'Начинающие', desc: 'Традиционный кавказский танец с динамичными движениями', time: '1 час 30 мин', slots: '15 мест', price: 'от 500₽' },
-              { title: 'Кавказские барабаны', badge: 'Средний', desc: 'Обучение игре на традиционных кавказских барабанах', time: '1 час 30 мин', slots: '10 мест', price: 'от 500₽' },
-              { title: 'Семейная лезгинка', badge: 'Начинающие', desc: 'Семейные занятия для детей и взрослых', time: '1 час 30 мин', slots: '20 мест', price: 'от 500₽' },
-              { title: 'Индивидуальные занятия', badge: 'Начинающие', desc: 'Персональные уроки с профессиональным преподавателем', time: '1 час 30 мин', slots: '5 мест', price: 'от 500₽' }
+              { title: 'Лезгинка', badge: 'Начинающие', desc: 'Традиционный кавказский танец с энергичными движениями и богатой культурной историей', time: '1 час 30 мин', slots: '12 мест', price: 'от 500₽' },
+              { title: 'Кавказские барабаны', badge: 'Средний', desc: 'Обучение игре на традиционных кавказских барабанах. Освойте древние ритмы гор', time: '1 час 30 мин', slots: '8 мест', price: 'от 500₽' },
+              { title: 'Семейная лезгинка', badge: 'Начинающие', desc: 'Занятия для всей семьи. Танцуйте вместе с детьми и создавайте незабываемые моменты', time: '1 час 30 мин', slots: '16 мест', price: 'от 500₽' },
+              { title: 'Индивидуальные занятия', badge: 'Начинающие', desc: 'Персональные уроки с мастером. Быстрое обучение в удобное для вас время', time: '1 час 30 мин', slots: '4 места', price: 'от 500₽' }
             ].map((dir, idx) => (
-              <div key={idx} className="bg-gradient-to-br from-red-600 to-red-700 text-white rounded-lg p-6 shadow-lg">
-                <span className="inline-block bg-white text-red-600 text-xs font-bold px-3 py-1 rounded-full mb-3">
+              <div key={idx} className="bg-gradient-to-br from-[#c63c3c] to-[#d04a30] text-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all">
+                <span className="inline-block bg-white text-[#c63c3c] text-xs font-bold px-4 py-2 rounded-full mb-4 font-['Montserrat']">
                   {dir.badge}
                 </span>
-                <h3 className="text-2xl font-bold mb-2">{dir.title}</h3>
-                <p className="text-sm opacity-90 mb-4">{dir.desc}</p>
-                <div className="flex items-center gap-4 text-sm mb-4 opacity-90">
-                  <span>⏱ {dir.time}</span>
-                  <span>👥 {dir.slots}</span>
+                <h3 className="text-3xl font-bold mb-3 font-['Montserrat']">{dir.title}</h3>
+                <p className="text-base opacity-95 mb-6 leading-relaxed">{dir.desc}</p>
+                <div className="flex items-center gap-6 text-sm mb-6 opacity-90">
+                  <span className="flex items-center gap-2"><Icon name="Clock" size={18} />{dir.time}</span>
+                  <span className="flex items-center gap-2"><Icon name="Users" size={18} />{dir.slots}</span>
                 </div>
-                <div className="flex items-center justify-between pt-4 border-t border-white/20">
-                  <span className="text-2xl font-bold">{dir.price}</span>
-                  <Button className="bg-white text-red-600 hover:bg-gray-100 font-bold">
-                    Узнать
+                <div className="flex items-center justify-between pt-6 border-t border-white/30">
+                  <span className="text-3xl font-bold font-['Montserrat']">{dir.price}</span>
+                  <Button className="bg-white text-[#c63c3c] hover:bg-gray-100 font-bold font-['Montserrat'] px-6 py-2">
+                    Узнать больше
                   </Button>
                 </div>
               </div>
@@ -102,41 +98,32 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-white">
-        <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-3 text-gray-900">
+      <section className="py-20 px-4 bg-white">
+        <div className="container mx-auto max-w-5xl">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-gray-900 font-['Montserrat']">
             Расписание занятий
           </h2>
-          <p className="text-center text-gray-600 mb-12">
-            Мы предоставляем возможность выбрать удобное расписание
+          <p className="text-center text-gray-600 text-lg mb-16">
+            Выбирайте удобное время для занятий
           </p>
 
-          <div className="space-y-8">
+          <div className="space-y-12">
             {[
-              { title: 'Кавказские барабаны', items: [
-                { day: 'ПТ 20/12/2025', time: '12:00', name: 'Начальная группа' },
-                { day: 'СБ 20/12/2025', time: '13:30-15:00', name: 'Концертный состав' }
-              ]},
-              { title: 'Семейная лезгинка', items: [
-                { day: 'ПТ 20/12/2025', time: '15:00-16:30', name: 'Детская группа' },
-                { day: 'СБ 20/12/2025', time: '16:30-18:00', name: 'Взрослая группа' }
-              ]},
-              { title: 'Свадебная лезгинка', items: [
-                { day: 'ПТ 20/12/2025', time: '18:00-19:00', name: 'Женская группа' },
-                { day: 'СБ 20/12/2025', time: '19:00-20:00', name: 'Мужская группа' }
-              ]}
+              { title: 'Кавказские барабаны', items: [{ day: 'ПТ 20/12/2024', time: '12:00', name: 'Начальная группа' }, { day: 'СБ 21/12/2024', time: '13:30-15:00', name: 'Концертный состав' }]},
+              { title: 'Семейная лезгинка', items: [{ day: 'ПТ 20/12/2024', time: '15:00-16:30', name: 'Детская группа' }, { day: 'СБ 21/12/2024', time: '16:30-18:00', name: 'Взрослая группа' }]},
+              { title: 'Свадебная лезгинка', items: [{ day: 'ПТ 20/12/2024', time: '18:00-19:00', name: 'Женская группа' }, { day: 'СБ 21/12/2024', time: '19:00-20:00', name: 'Мужская группа' }]}
             ].map((section, idx) => (
               <div key={idx}>
-                <h3 className="text-xl font-bold mb-4 text-gray-900">{section.title}</h3>
-                <div className="space-y-3">
+                <h3 className="text-2xl font-bold mb-6 text-gray-900 font-['Montserrat']">{section.title}</h3>
+                <div className="space-y-4">
                   {section.items.map((item, sidx) => (
-                    <div key={sidx} className="border border-gray-200 rounded-lg p-4">
+                    <div key={sidx} className="bg-gray-50 border-l-4 border-[#c63c3c] rounded-lg p-5 hover:shadow-md transition-all">
                       <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
-                        <div className="flex items-center gap-4">
-                          <div className="text-sm text-gray-600">{item.day}</div>
-                          <div className="text-sm font-semibold text-gray-900">{item.time}</div>
+                        <div className="flex items-center gap-6">
+                          <div className="text-sm font-semibold text-gray-600 min-w-[110px]">{item.day}</div>
+                          <div className="text-base font-bold text-[#c63c3c] font-['Montserrat']">{item.time}</div>
                         </div>
-                        <div className="text-sm text-gray-700">{item.name}</div>
+                        <div className="text-base text-gray-700 font-medium">{item.name}</div>
                       </div>
                     </div>
                   ))}
@@ -147,36 +134,33 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-gray-50">
+      <section className="py-20 px-4 bg-gray-50">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Цены</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-900 font-['Montserrat']">Цены</h2>
           
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 gap-8">
             {[
-              { title: 'Абонемент на месяц', price: '3000₽', features: ['Посещение групповых занятий', 'Доступ к расписанию', '8 занятий в месяц'] },
-              { title: 'Общее абонемент', price: '5500₽', popular: true, features: ['Посещение всех направлений', 'Приоритетная запись', 'Безлимитные занятия'] },
-              { title: 'Индивидуальное обучение', price: '2500₽', features: ['Персональный подход', 'Гибкий график', 'Быстрый прогресс'] }
+              { title: 'Абонемент на месяц', price: '3000₽', features: ['8 занятий в месяц', 'Доступ к групповым занятиям', 'Учебные материалы включены', 'Сертификат по окончании курса'] },
+              { title: 'Общее абонемент', price: '5500₽', popular: true, features: ['Безлимитный доступ', 'Все направления обучения', 'Приоритетная запись', 'Участие в мастер-классах', 'Скидки на мероприятия'] },
+              { title: 'Индивидуальное обучение', price: '2500₽', features: ['Персональный подход', 'Гибкое расписание', 'Быстрое достижение результата', 'Индивидуальная программа'] }
             ].map((price, idx) => (
-              <div 
-                key={idx} 
-                className={`bg-white rounded-lg shadow-lg p-6 ${price.popular ? 'ring-2 ring-red-600' : ''}`}
-              >
+              <div key={idx} className={`bg-white rounded-2xl shadow-xl p-8 ${price.popular ? 'ring-4 ring-[#c63c3c] relative transform scale-105' : ''}`}>
                 {price.popular && (
-                  <div className="bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full inline-block mb-4">
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-orange-500 to-orange-600 text-white text-sm font-bold px-6 py-2 rounded-full shadow-lg font-['Montserrat']">
                     Популярно
                   </div>
                 )}
-                <h3 className="text-xl font-bold mb-4 text-gray-900">{price.title}</h3>
-                <div className="text-4xl font-bold text-red-600 mb-6">{price.price}</div>
-                <ul className="space-y-3 mb-6">
+                <h3 className="text-2xl font-bold mb-6 text-gray-900 font-['Montserrat'] mt-2">{price.title}</h3>
+                <div className="text-5xl font-bold text-[#c63c3c] mb-8 font-['Montserrat']">{price.price}</div>
+                <ul className="space-y-4 mb-8">
                   {price.features.map((feature, fidx) => (
-                    <li key={fidx} className="flex items-start gap-2 text-sm text-gray-700">
-                      <span className="text-red-600">✓</span>
-                      <span>{feature}</span>
+                    <li key={fidx} className="flex items-start gap-3 text-base text-gray-700">
+                      <span className="text-[#c63c3c] text-xl font-bold">✓</span>
+                      <span className="leading-relaxed">{feature}</span>
                     </li>
                   ))}
                 </ul>
-                <Button className={`w-full ${price.popular ? 'bg-red-600 hover:bg-red-700' : 'bg-gray-900 hover:bg-gray-800'} text-white font-bold`}>
+                <Button className={`w-full h-12 text-base font-bold font-['Montserrat'] ${price.popular ? 'bg-[#c63c3c] hover:bg-[#a83232]' : 'bg-gray-900 hover:bg-gray-800'} text-white rounded-lg`}>
                   Выбрать тариф
                 </Button>
               </div>
@@ -185,141 +169,151 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-white">
+      <section className="py-20 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Галерея</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-gray-900 font-['Montserrat']">Галерея</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {Array(14).fill(0).map((_, idx) => (
-              <div key={idx} className="aspect-square rounded-lg overflow-hidden bg-gray-200">
-                <img 
-                  src="https://cdn.poehali.dev/files/b42a71b1-b412-49c4-a137-8a2dbb7f4f92.jpeg" 
-                  alt={`Фото ${idx + 1}`} 
-                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-300" 
-                />
+              <div key={idx} className="aspect-square rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:scale-105">
+                <div className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                  <Icon name="Image" size={48} className="text-gray-400" />
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-gray-900 text-white">
-        <div className="container mx-auto max-w-5xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Контакты</h2>
+      <section className="py-20 px-4 bg-gray-900 text-white">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 font-['Montserrat']">Контакты</h2>
           
-          <div className="grid md:grid-cols-2 gap-12 mb-12">
-            <div className="space-y-6">
+          <div className="grid md:grid-cols-2 gap-16 mb-16">
+            <div className="space-y-8">
               <div>
-                <div className="flex items-center gap-2 mb-2">
-                  <Icon name="MapPin" className="text-red-500" size={20} />
-                  <span className="font-bold">Адрес</span>
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 bg-[#c63c3c] rounded-full flex items-center justify-center">
+                    <Icon name="MapPin" className="text-white" size={20} />
+                  </div>
+                  <span className="font-bold text-lg font-['Montserrat']">Адрес</span>
                 </div>
-                <p className="text-gray-300 ml-7">г. Москва, ул. Примерная, д. 1</p>
+                <p className="text-gray-300 text-base ml-13 leading-relaxed">г. Санкт-Петербург, Невский проспект, д. 123</p>
               </div>
               
               <div>
-                <div className="flex items-center gap-2 mb-2">
-                  <Icon name="Phone" className="text-red-500" size={20} />
-                  <span className="font-bold">Телефон</span>
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 bg-[#c63c3c] rounded-full flex items-center justify-center">
+                    <Icon name="Phone" className="text-white" size={20} />
+                  </div>
+                  <span className="font-bold text-lg font-['Montserrat']">Телефон</span>
                 </div>
-                <p className="text-gray-300 ml-7">+7 (999) 123-45-67</p>
-                <p className="text-gray-300 ml-7">+7 (999) 765-43-21</p>
+                <p className="text-gray-300 text-base ml-13">+7 (812) 123-45-67</p>
+                <p className="text-gray-300 text-base ml-13">+7 (812) 765-43-21</p>
               </div>
               
               <div>
-                <div className="flex items-center gap-2 mb-2">
-                  <Icon name="Mail" className="text-red-500" size={20} />
-                  <span className="font-bold">Email</span>
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 bg-[#c63c3c] rounded-full flex items-center justify-center">
+                    <Icon name="Mail" className="text-white" size={20} />
+                  </div>
+                  <span className="font-bold text-lg font-['Montserrat']">Email</span>
                 </div>
-                <p className="text-gray-300 ml-7">info@rhythmigor.ru</p>
+                <p className="text-gray-300 text-base ml-13">info@ritmygor.ru</p>
               </div>
               
               <div>
-                <div className="flex items-center gap-2 mb-2">
-                  <Icon name="Clock" className="text-red-500" size={20} />
-                  <span className="font-bold">Режим работы</span>
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-10 h-10 bg-[#c63c3c] rounded-full flex items-center justify-center">
+                    <Icon name="Clock" className="text-white" size={20} />
+                  </div>
+                  <span className="font-bold text-lg font-['Montserrat']">Режим работы</span>
                 </div>
-                <p className="text-gray-300 ml-7">Пн-Вс: 10:00 - 22:00</p>
+                <p className="text-gray-300 text-base ml-13">Понедельник - Воскресенье</p>
+                <p className="text-gray-300 text-base ml-13">10:00 - 22:00</p>
               </div>
             </div>
 
-            <div className="bg-gray-800 rounded-lg p-6">
-              <h3 className="text-xl font-bold mb-4">Записаться на занятие</h3>
-              <form onSubmit={handleSubmit} className="space-y-4">
+            <div className="bg-gray-800 rounded-2xl p-8 shadow-xl">
+              <h3 className="text-2xl font-bold mb-6 font-['Montserrat']">Записаться на занятие</h3>
+              <form onSubmit={handleSubmit} className="space-y-5">
                 <Input
-                  placeholder="Имя"
+                  placeholder="Ваше имя"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="bg-gray-700 border-gray-600 text-white placeholder:text-gray-400"
+                  className="bg-gray-700 border-gray-600 text-white placeholder:text-gray-400 h-12 rounded-lg"
                   required
                 />
                 <Input
                   type="email"
-                  placeholder="Email"
+                  placeholder="Ваш email"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="bg-gray-700 border-gray-600 text-white placeholder:text-gray-400"
+                  className="bg-gray-700 border-gray-600 text-white placeholder:text-gray-400 h-12 rounded-lg"
                   required
                 />
                 <Textarea
-                  placeholder="Сообщение"
+                  placeholder="Ваше сообщение"
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="bg-gray-700 border-gray-600 text-white placeholder:text-gray-400 min-h-[100px]"
+                  className="bg-gray-700 border-gray-600 text-white placeholder:text-gray-400 min-h-[120px] rounded-lg"
                 />
-                <Button type="submit" className="w-full bg-red-600 hover:bg-red-700 font-bold">
+                <Button type="submit" className="w-full bg-[#c63c3c] hover:bg-[#a83232] h-12 text-base font-bold font-['Montserrat'] rounded-lg">
                   Отправить заявку
                 </Button>
               </form>
             </div>
           </div>
 
-          <div className="bg-red-600 h-80 rounded-lg flex items-center justify-center">
+          <div className="bg-[#c63c3c] h-96 rounded-2xl flex items-center justify-center shadow-xl">
             <div className="text-center">
-              <Icon name="MapPin" size={64} className="mx-auto mb-4 opacity-50" />
-              <p className="text-xl">Карта</p>
+              <Icon name="MapPin" size={80} className="mx-auto mb-6 opacity-40" />
+              <p className="text-2xl font-['Montserrat'] font-semibold">Карта расположения</p>
+              <p className="text-base opacity-80 mt-2">г. Санкт-Петербург, Невский проспект, д. 123</p>
             </div>
           </div>
         </div>
       </section>
 
-      <footer className="bg-black text-gray-400 py-12 px-4">
+      <footer className="bg-black text-gray-400 py-16 px-4">
         <div className="container mx-auto max-w-6xl">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
+          <div className="grid md:grid-cols-3 gap-12 mb-12">
             <div>
-              <h4 className="text-white font-bold mb-4 text-lg">О школе</h4>
-              <p className="text-sm leading-relaxed">
-                Rhythmigor Shop — профессиональная школа лезгинки и кавказских барабанов в Москве
+              <h4 className="text-white font-bold mb-5 text-xl font-['Montserrat']">О школе</h4>
+              <p className="text-base leading-relaxed">
+                Ритмы Гор — профессиональная школа лезгинки и кавказских барабанов в Санкт-Петербурге. 
+                Мы сохраняем и передаём традиции кавказской культуры.
               </p>
             </div>
             
             <div>
-              <h4 className="text-white font-bold mb-4 text-lg">Навигация</h4>
-              <ul className="space-y-2 text-sm">
-                <li><a href="#" className="hover:text-red-500 transition">Главная</a></li>
-                <li><a href="#" className="hover:text-red-500 transition">Направления</a></li>
-                <li><a href="#" className="hover:text-red-500 transition">Расписание</a></li>
-                <li><a href="#" className="hover:text-red-500 transition">Цены</a></li>
+              <h4 className="text-white font-bold mb-5 text-xl font-['Montserrat']">Навигация</h4>
+              <ul className="space-y-3 text-base">
+                <li><a href="#" className="hover:text-[#c63c3c] transition-colors">Главная</a></li>
+                <li><a href="#" className="hover:text-[#c63c3c] transition-colors">Направления</a></li>
+                <li><a href="#" className="hover:text-[#c63c3c] transition-colors">Расписание</a></li>
+                <li><a href="#" className="hover:text-[#c63c3c] transition-colors">Цены</a></li>
+                <li><a href="#" className="hover:text-[#c63c3c] transition-colors">Контакты</a></li>
               </ul>
             </div>
             
             <div>
-              <h4 className="text-white font-bold mb-4 text-lg">Мы в соцсетях</h4>
-              <div className="flex gap-3">
-                <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition">
-                  <Icon name="Facebook" size={20} />
+              <h4 className="text-white font-bold mb-5 text-xl font-['Montserrat']">Мы в соцсетях</h4>
+              <div className="flex gap-4">
+                <a href="#" className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#c63c3c] transition-colors">
+                  <Icon name="Facebook" size={22} />
                 </a>
-                <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition">
-                  <Icon name="Instagram" size={20} />
+                <a href="#" className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#c63c3c] transition-colors">
+                  <Icon name="Instagram" size={22} />
                 </a>
-                <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-red-600 transition">
-                  <Icon name="Youtube" size={20} />
+                <a href="#" className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#c63c3c] transition-colors">
+                  <Icon name="Youtube" size={22} />
                 </a>
               </div>
             </div>
           </div>
           
-          <div className="border-t border-gray-800 pt-6 text-center text-sm">
-            <p>© 2025 Rhythmigor Shop. Все права защищены.</p>
+          <div className="border-t border-gray-800 pt-8 text-center">
+            <p className="text-base">© 2024 Ритмы Гор. Все права защищены.</p>
           </div>
         </div>
       </footer>
