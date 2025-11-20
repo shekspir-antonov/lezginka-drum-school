@@ -3,7 +3,7 @@ import Icon from '@/components/ui/icon';
 
 const HeroSection = () => {
   return (
-    <section className="relative px-6 bg-gradient-to-br from-[#A0351F] via-[#C85A35] to-[#D4793D] text-white overflow-hidden py-[60px]">
+    <section className="relative px-6 from-[#A0351F] via-[#C85A35] to-[#D4793D] text-white overflow-hidden py-[60px] bg-[#00000033]">
       <div className="absolute top-12 left-16 opacity-50">
         <Icon name="Music" size={40} className="text-white" />
       </div>
