@@ -13,7 +13,7 @@ const HeroSection = () => {
           Почувствуй
         </h2>
         <h3 
-          className="md:text-8xl lg:text-9xl font-black mb-12 animate-pulse text-6xl text-center"
+          className="md:text-8xl lg:text-9xl font-black mb-12 animate-pulse text-center text-6xl"
           style={{ 
             WebkitTextStroke: '3px white',
             color: 'transparent',
