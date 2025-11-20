@@ -41,25 +41,42 @@ const Index = () => {
         </div>
       </header>
 
-      <section className="relative bg-gradient-to-br from-[#d04430] via-[#d04430] to-[#e8812d] text-white py-32 px-4 overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-0 w-full h-full" style={{
-            backgroundImage: `radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(255,255,255,0.1) 0%, transparent 50%)`
-          }}></div>
-        </div>
-        <div className="container mx-auto text-center relative z-10 max-w-4xl">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-            Почувствуй<br />
-            <span className="text-6xl md:text-8xl">Ритмы Гор</span>
+      <style dangerouslySetInnerHTML={{__html: `
+        @keyframes pulse-sync {
+          0%, 100% { transform: scale(1); opacity: 0.7; }
+          50% { transform: scale(1.1); opacity: 1; }
+        }
+        .pulse-icon { animation: pulse-sync 2s ease-in-out infinite; }
+      `}} />
+      
+      <section className="relative bg-gradient-to-br from-[#b8341e] via-[#c1392b] to-[#d35400] text-white py-32 px-4 overflow-hidden">
+        <Icon name="Music" size={64} className="absolute top-12 left-12 opacity-70 pulse-icon" />
+        
+        <div className="container mx-auto text-center relative z-10 max-w-5xl">
+          <h1 className="text-5xl md:text-6xl font-bold mb-3 leading-tight text-white" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+            Почувствуй
           </h1>
+          <h2 className="text-6xl md:text-8xl font-bold mb-8 leading-none pulse-icon" style={{ 
+            fontFamily: "'Montserrat', sans-serif",
+            color: 'transparent',
+            WebkitTextStroke: '3px white',
+            textStroke: '3px white',
+            letterSpacing: '0.02em'
+          }}>
+            Ритмы Гор
+          </h2>
           <p className="text-xl md:text-2xl mb-10 opacity-95 leading-relaxed max-w-3xl mx-auto">
-            Изучи лезгинку и кавказские барабаны с лучшими преподавателями.<br />
-            Присоединяйся к нашему сообществу традиционной культуры!
+            Изучай традиционные кавказские танцы и барабаны с<br />
+            профессиональными мастерами
           </p>
-          <div className="max-w-lg mx-auto">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-3xl mx-auto">
+            <Button className="bg-[#e67e22] hover:bg-[#d35400] text-white font-bold px-8 py-6 text-lg rounded-xl shadow-xl flex items-center gap-2" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+              <Icon name="Play" size={20} />
+              Начать обучение
+            </Button>
             <Input 
-              placeholder="Введите ваше имя"
-              className="bg-white text-gray-900 border-0 h-14 text-lg rounded-xl shadow-2xl"
+              placeholder=""
+              className="bg-white text-gray-900 border-0 h-14 text-lg rounded-xl shadow-xl flex-1 max-w-md"
             />
           </div>
         </div>
