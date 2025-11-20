@@ -4,7 +4,10 @@ import Icon from '@/components/ui/icon';
 const HeroSection = () => {
   return (
     <section className="relative px-6 bg-gradient-to-br from-[#E85A1F] via-[#F07030] to-[#F8914F] text-white overflow-hidden py-[60px]">
-      <div className="absolute top-12 left-16 opacity-50">
+      <div className="absolute inset-0 bg-gradient-to-br from-[#B8321A]/40 via-transparent to-transparent pointer-events-none"></div>
+      <div className="absolute inset-0 bg-gradient-to-tl from-[#B8321A]/40 via-transparent to-transparent pointer-events-none"></div>
+      
+      <div className="absolute top-12 left-16 opacity-50 z-10">
         <Icon name="Music" size={40} className="text-white" />
       </div>
       
