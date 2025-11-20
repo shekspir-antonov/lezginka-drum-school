@@ -4,9 +4,33 @@ import Icon from '@/components/ui/icon';
 const HeroSection = () => {
   return (
     <section className="relative px-6 bg-gradient-to-r from-[#A0451E] via-[#C4693D] to-[#D8914A] text-white overflow-hidden" style={{ paddingTop: '120px', paddingBottom: '120px' }}>
-      <div className="absolute top-12 left-16 opacity-40">
-        <Icon name="Music2" size={48} className="text-white" />
-      </div>
+      {/* Кавказский орнамент слева */}
+      <div className="absolute top-0 left-0 w-32 h-full opacity-20" style={{ 
+        backgroundImage: `url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 10 L50 30 L70 30 L55 42 L60 62 L40 50 L20 62 L25 42 L10 30 L30 30 Z' fill='white'/%3E%3C/svg%3E")`,
+        backgroundRepeat: 'repeat-y',
+        backgroundSize: '80px 80px'
+      }} />
+      
+      {/* Кавказский орнамент справа */}
+      <div className="absolute top-0 right-0 w-32 h-full opacity-20" style={{ 
+        backgroundImage: `url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 10 L50 30 L70 30 L55 42 L60 62 L40 50 L20 62 L25 42 L10 30 L30 30 Z' fill='white'/%3E%3C/svg%3E")`,
+        backgroundRepeat: 'repeat-y',
+        backgroundSize: '80px 80px'
+      }} />
+      
+      {/* Орнамент сверху */}
+      <div className="absolute top-0 left-0 right-0 h-24 opacity-30" style={{ 
+        backgroundImage: `url("data:image/svg+xml,%3Csvg width='120' height='40' viewBox='0 0 120 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20 Q30 0 60 20 T120 20' stroke='white' fill='none' stroke-width='2'/%3E%3Ccircle cx='60' cy='20' r='8' fill='white'/%3E%3Ccircle cx='30' cy='10' r='5' fill='white'/%3E%3Ccircle cx='90' cy='10' r='5' fill='white'/%3E%3C/svg%3E")`,
+        backgroundRepeat: 'repeat-x',
+        backgroundPosition: 'center top'
+      }} />
+      
+      {/* Орнамент снизу */}
+      <div className="absolute bottom-0 left-0 right-0 h-24 opacity-30" style={{ 
+        backgroundImage: `url("data:image/svg+xml,%3Csvg width='120' height='40' viewBox='0 0 120 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 20 Q30 40 60 20 T120 20' stroke='white' fill='none' stroke-width='2'/%3E%3Ccircle cx='60' cy='20' r='8' fill='white'/%3E%3Ccircle cx='30' cy='30' r='5' fill='white'/%3E%3Ccircle cx='90' cy='30' r='5' fill='white'/%3E%3C/svg%3E")`,
+        backgroundRepeat: 'repeat-x',
+        backgroundPosition: 'center bottom'
+      }} />
       
       <div className="container mx-auto text-center relative z-10">
         <h2 style={{ fontSize: '80px', fontWeight: 700, marginBottom: '15px', lineHeight: '1' }}>

@@ -99,3 +99,17 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Кавказские орнаменты */
+.ornament-border {
+  border-image: repeating-linear-gradient(
+      45deg,
+      #d04430,
+      #d04430 10px,
+      #e8812d 10px,
+      #e8812d 20px
+    )
+    1;
+  border-width: 3px;
+  border-style: solid;
+}

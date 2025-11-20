@@ -2,7 +2,10 @@ import { Button } from '@/components/ui/button';
 
 const Header = () => {
   return (
-    <header className="bg-white border-b sticky top-0 z-50 px-0 mx-0 py-0 my-0">
+    <header className="bg-white sticky top-0 z-50 px-0 mx-0 py-0 my-0" style={{
+      borderBottom: '4px solid transparent',
+      borderImage: 'repeating-linear-gradient(90deg, #D04430 0px, #D04430 20px, #E8812D 20px, #E8812D 40px, #8B4513 40px, #8B4513 60px) 1'
+    }}>
       <div className="container mx-auto px-6 py-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
