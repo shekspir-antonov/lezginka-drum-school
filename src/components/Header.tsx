@@ -9,7 +9,7 @@ const Header = () => {
             <img 
               src="https://cdn.poehali.dev/files/7ba66c70-52d0-4d8a-9219-ff546a78df7e.png" 
               alt="Ритмы Гор"
-              className="h-20 md:h-24 lg:h-28 cursor-pointer transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_8px_16px_rgba(234,88,12,0.4)] px-0.5 py-2.5"
+              className="h-20 md:h-24 lg:h-28 cursor-pointer transition-all duration-300 hover:scale-110 hover:drop-shadow-[0_8px_16px_rgba(234,88,12,0.4)] py-0 px-[15px]"
             />
           </div>
           
