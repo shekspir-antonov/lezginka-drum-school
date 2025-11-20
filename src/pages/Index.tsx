@@ -89,7 +89,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <header className="bg-white border-b sticky top-0 z-50 mx-0 px-0">
+      <header className="bg-white border-b sticky top-0 z-50 px-0 mx-0 py-0 my-0">
         <div className="container mx-auto px-6 py-3">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
