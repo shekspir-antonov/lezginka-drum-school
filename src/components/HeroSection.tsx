@@ -20,12 +20,13 @@ const HeroSection = () => {
           <h1 className="text-5xl md:text-6xl font-bold mb-3 leading-tight text-white" style={{ fontFamily: "'Montserrat', sans-serif" }}>
             Почувствуй
           </h1>
-          <h2 className="text-6xl md:text-8xl font-bold mb-8 leading-none pulse-icon" style={{ 
+          <h2 className="text-6xl md:text-8xl font-black mb-8 leading-none pulse-icon" style={{ 
             fontFamily: "'Montserrat', sans-serif",
-            color: 'transparent',
-            WebkitTextStroke: '3px white',
-            textStroke: '3px white',
-            letterSpacing: '0.02em'
+            color: '#fbbf24',
+            WebkitTextStroke: '2px #78350f',
+            textStroke: '2px #78350f',
+            letterSpacing: '0.02em',
+            textShadow: '4px 4px 0px rgba(0,0,0,0.3)'
           }}>
             Ритмы Гор
           </h2>
