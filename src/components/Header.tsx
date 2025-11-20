@@ -16,8 +16,7 @@ const Header = () => {
           <nav className="hidden md:flex items-center gap-8 text-base text-gray-700">
             <a href="#directions" className="hover:text-orange-600 transition-colors">Направления</a>
             <a href="#schedule" className="hover:text-orange-600 transition-colors">Расписание</a>
-            <a href="#achievements" className="hover:text-orange-600 transition-colors">Достижения</a>
-            <a href="#teachers" className="hover:text-orange-600 transition-colors">Преподаватели</a>
+            <a href="#prices" className="hover:text-orange-600 transition-colors">Цены</a>
             <a href="#gallery" className="hover:text-orange-600 transition-colors">Галерея</a>
             <a href="#contact" className="hover:text-orange-600 transition-colors">Контакты</a>
           </nav>
