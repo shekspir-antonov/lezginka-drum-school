@@ -29,7 +29,7 @@ const HeroSection = () => {
           <h1 className="text-6xl md:text-7xl font-bold mb-6 leading-tight text-white" style={{ fontFamily: "'Montserrat', sans-serif" }}>
             Почувствуй
           </h1>
-          <h2 className="md:text-8xl mb-10 leading-none pulse-icon font-extrabold text-[7.50rem]" style={{ 
+          <h2 className="md:text-8xl mb-10 leading-none pulse-icon text-[7.50rem] font-extrabold" style={{ 
             fontFamily: "'Axiforma', sans-serif",
             fontWeight: '700',
             color: 'transparent',
