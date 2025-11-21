@@ -21,7 +21,7 @@ const HeroSection = () => {
         .pulse-icon { animation: pulse-sync 2s ease-in-out infinite; }
       `}} />
       
-      <section id="hero" className="relative bg-gradient-to-r from-[#a72c1a] via-[#d35400] to-[#e67e22] text-white overflow-hidden px-4 py-16 md:py-24 lg:py-32">
+      <section id="hero" className="relative bg-gradient-to-r from-[#a72c1a] via-[#d35400] to-[#e67e22] text-white overflow-hidden px-4 md:py-24 lg:py-32 py-[60px]">
         <Icon name="Music" size={48} className="absolute top-8 left-4 md:top-12 md:left-12 opacity-40" />
         <Icon name="Music2" size={64} className="absolute bottom-8 right-4 md:bottom-12 md:right-12 opacity-30" />
         
