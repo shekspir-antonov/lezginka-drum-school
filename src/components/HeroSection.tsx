@@ -6,13 +6,7 @@ const HeroSection = () => {
   return (
     <>
       <style dangerouslySetInnerHTML={{__html: `
-        @font-face {
-          font-family: 'Axiforma';
-          src: url('https://cdn.jsdelivr.net/gh/alfredoparreiras/axiforma-font@master/Axiforma-Bold.woff2') format('woff2'),
-               url('https://cdn.jsdelivr.net/gh/alfredoparreiras/axiforma-font@master/Axiforma-Bold.woff') format('woff');
-          font-weight: 700;
-          font-style: normal;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;800&display=swap');
         
         @keyframes pulse-sync {
           0%, 100% { transform: scale(1); opacity: 0.7; }
@@ -30,12 +24,12 @@ const HeroSection = () => {
             Почувствуй
           </h1>
           <h2 className="md:text-8xl mb-10 leading-none pulse-icon text-6xl" style={{ 
-            fontFamily: "'Montserrat', sans-serif",
-            fontWeight: 'bold',
+            fontFamily: "'Inter', sans-serif",
+            fontWeight: '800',
             color: 'transparent',
             WebkitTextStroke: '3px white',
             textStroke: '3px white',
-            letterSpacing: '0.08em'
+            letterSpacing: '0.02em'
           }}>
             Ритмы Гор
           </h2>
