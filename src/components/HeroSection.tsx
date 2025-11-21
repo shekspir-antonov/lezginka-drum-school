@@ -22,8 +22,8 @@ const HeroSection = () => {
             Почувствуй
           </h1>
           <h2 className="text-7xl md:text-8xl mb-10 leading-none pulse-icon" style={{ 
-            fontFamily: "'Inder', sans-serif",
-            fontWeight: '500',
+            fontFamily: "'Montserrat', sans-serif",
+            fontWeight: '800',
             color: 'transparent',
             WebkitTextStroke: '3px white',
             textStroke: '3px white',
