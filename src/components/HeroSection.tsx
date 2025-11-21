@@ -26,8 +26,8 @@ const HeroSection = () => {
           <h2 className="text-6xl md:text-8xl font-bold mb-10 leading-none pulse-icon" style={{ 
             fontFamily: "'Montserrat', sans-serif",
             color: '#e67e22',
-            WebkitTextStroke: '3px white',
-            textStroke: '3px white',
+            WebkitTextStroke: '6px white',
+            textStroke: '6px white',
             paintOrder: 'stroke fill'
           }}>
             Ритмы Гор
