@@ -6,6 +6,8 @@ import PricingSection from '@/components/PricingSection';
 import GallerySection from '@/components/GallerySection';
 import ContactsSection from '@/components/ContactsSection';
 import Footer from '@/components/Footer';
+import WhatsAppButton from '@/components/WhatsAppButton';
+import ScrollToTopButton from '@/components/ScrollToTopButton';
 
 const Index = () => {
   return (
@@ -18,6 +20,8 @@ const Index = () => {
       <GallerySection />
       <ContactsSection />
       <Footer />
+      <WhatsAppButton />
+      <ScrollToTopButton />
     </div>
   );
 };

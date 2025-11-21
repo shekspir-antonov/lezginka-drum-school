@@ -1,8 +1,14 @@
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
 import Icon from '@/components/ui/icon';
 
 const HeroSection = () => {
+  const scrollToContacts = () => {
+    const element = document.getElementById('contacts');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <>
       <style dangerouslySetInnerHTML={{__html: `
@@ -15,36 +21,35 @@ const HeroSection = () => {
         .pulse-icon { animation: pulse-sync 2s ease-in-out infinite; }
       `}} />
       
-      <section id="hero" className="relative bg-gradient-to-r from-[#a72c1a] via-[#d35400] to-[#e67e22] text-white overflow-hidden px-0 mx-0 my-0 py-[50px]">
-        <Icon name="Music" size={64} className="absolute top-12 left-12 opacity-40" />
-        <Icon name="Music2" size={80} className="absolute bottom-12 right-12 opacity-30" />
+      <section id="hero" className="relative bg-gradient-to-r from-[#a72c1a] via-[#d35400] to-[#e67e22] text-white overflow-hidden px-4 py-16 md:py-24 lg:py-32">
+        <Icon name="Music" size={48} className="absolute top-8 left-4 md:top-12 md:left-12 opacity-40" />
+        <Icon name="Music2" size={64} className="absolute bottom-8 right-4 md:bottom-12 md:right-12 opacity-30" />
         
         <div className="container mx-auto text-center relative z-10 max-w-5xl">
-          <h1 className="text-6xl md:text-7xl font-bold mb-6 leading-tight text-white" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 leading-tight text-white" style={{ fontFamily: "'Montserrat', sans-serif" }}>
             Почувствуй
           </h1>
-          <h2 className="md:text-7xl font-bold mb-10 leading-none pulse-icon text-5xl px-0 text-center mx-[50px]" style={{ 
+          <h2 className="text-5xl md:text-7xl font-bold mb-8 md:mb-10 leading-none pulse-icon px-4" style={{ 
             fontFamily: "'Montserrat', sans-serif",
             color: '#e67e22',
-            WebkitTextStroke: '6px white',
-            textStroke: '6px white',
+            WebkitTextStroke: '4px white',
+            textStroke: '4px white',
             paintOrder: 'stroke fill'
           }}>
             Ритмы Гор
           </h2>
-          <p className="text-xl md:text-2xl mb-12 leading-relaxed max-w-4xl mx-auto" style={{ fontFamily: "'Open Sans', sans-serif" }}>
-            Изучай традиционные кавказские танцы и барабаны с<br />
-            профессиональными мастерами
+          <p className="text-lg md:text-xl lg:text-2xl mb-8 md:mb-12 leading-relaxed max-w-4xl mx-auto px-4" style={{ fontFamily: "'Open Sans', sans-serif" }}>
+            Изучай традиционные кавказские танцы и барабаны с профессиональными мастерами
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-3xl mx-auto">
-            <Button className="bg-[#e67e22] hover:bg-[#d35400] text-white font-semibold px-10 py-6 text-lg rounded-lg shadow-lg flex items-center gap-3" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+          <div className="flex flex-col items-center justify-center gap-4 max-w-3xl mx-auto px-4">
+            <Button 
+              onClick={scrollToContacts}
+              className="bg-[#e67e22] hover:bg-[#d35400] text-white font-semibold px-8 md:px-10 py-5 md:py-6 text-base md:text-lg rounded-lg shadow-lg flex items-center gap-3 w-full sm:w-auto" 
+              style={{ fontFamily: "'Montserrat', sans-serif" }}
+            >
               <Icon name="Play" size={22} />
               Начать обучение
             </Button>
-            <Input 
-              placeholder=""
-              className="bg-white text-gray-900 border-0 h-14 text-lg rounded-lg shadow-lg flex-1 max-w-md"
-            />
           </div>
         </div>
       </section>
