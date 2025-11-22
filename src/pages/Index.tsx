@@ -11,7 +11,7 @@ import ScrollToTopButton from '@/components/ScrollToTopButton';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-white my-0 py-0" style={{ fontFamily: "'Open Sans', sans-serif" }}>
+    <div className="min-h-screen bg-white py-0 my-0" style={{ fontFamily: "'Open Sans', sans-serif" }}>
       <Header />
       <HeroSection />
       <DirectionsSection />
