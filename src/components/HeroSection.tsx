@@ -21,7 +21,7 @@ const HeroSection = () => {
         .pulse-icon { animation: pulse-sync 2s ease-in-out infinite; }
       `}} />
       
-      <section id="hero" className="relative text-white overflow-hidden px-4 py-[75px]" style={{ 
+      <section id="hero" className="relative text-white overflow-hidden px-4 py-[81px]" style={{ 
         paddingTop: '7vh', 
         paddingBottom: '7vh',
         background: 'linear-gradient(135deg, #a72c1a 0%, #d35400 50%, #a72c1a 100%)'
