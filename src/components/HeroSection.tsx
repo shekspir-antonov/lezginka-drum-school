@@ -33,7 +33,7 @@ const HeroSection = () => {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold md:mb-6 leading-tight text-white my-0 py-0" style={{ fontFamily: "'Montserrat', sans-serif" }}>
             Почувствуй
           </h1>
-          <h2 className="text-5xl md:text-7xl font-bold md:mb-10 leading-none pulse-icon px-4 my-[18px]" style={{ 
+          <h2 className="text-5xl md:text-7xl font-bold md:mb-6 leading-none pulse-icon px-4 my-[18px]" style={{ 
             fontFamily: "'Montserrat', sans-serif",
             color: '#e67e22',
             WebkitTextStroke: '4px white',
@@ -42,7 +42,7 @@ const HeroSection = () => {
           }}>
             Ритмы Гор
           </h2>
-          <p className="text-lg md:text-xl lg:text-2xl mb-8 md:mb-12 leading-relaxed max-w-4xl mx-auto px-4" style={{ fontFamily: "'Open Sans', sans-serif" }}>
+          <p className="text-lg md:text-xl lg:text-2xl mb-5 md:mb-7 leading-relaxed max-w-4xl mx-auto px-4" style={{ fontFamily: "'Open Sans', sans-serif" }}>
             Изучай традиционные кавказские танцы и барабаны с профессиональными мастерами
           </p>
           <div className="flex flex-col items-center justify-center gap-4 max-w-3xl mx-auto px-4">
