@@ -10,7 +10,7 @@ const DirectionsSection = () => {
   };
 
   return (
-    <section id="directions" className="py-12 md:py-20 px-4 bg-gray-50">
+    <section id="directions" className="py-12 md:py-20 px-4 bg-gray-50 my-0">
       <div className="container mx-auto max-w-7xl">
         <h2 className="md:text-4xl lg:text-5xl font-bold text-center mb-3 md:mb-4 text-gray-900 text-4xl" style={{ fontFamily: "'Montserrat', sans-serif" }}>
           Направления обучения

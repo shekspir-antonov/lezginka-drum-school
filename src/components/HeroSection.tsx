@@ -21,7 +21,7 @@ const HeroSection = () => {
         .pulse-icon { animation: pulse-sync 2s ease-in-out infinite; }
       `}} />
       
-      <section id="hero" className="relative text-white overflow-hidden px-4 py-[81px]" style={{ 
+      <section id="hero" className="relative text-white overflow-hidden px-4 py-[81px] my-1.5" style={{ 
         paddingTop: '7vh', 
         paddingBottom: '7vh',
         background: 'linear-gradient(135deg, #a72c1a 0%, #d35400 50%, #a72c1a 100%)'
@@ -45,7 +45,7 @@ const HeroSection = () => {
           <p className="text-lg md:text-xl lg:text-2xl mb-5 md:mb-7 leading-relaxed max-w-4xl mx-auto px-4 py-1.5" style={{ fontFamily: "'Open Sans', sans-serif" }}>
             Изучай традиционные кавказские танцы и барабаны с профессиональными мастерами
           </p>
-          <div className="flex flex-col items-center justify-center gap-4 max-w-3xl mx-auto px-4">
+          <div className="flex flex-col items-center justify-center gap-4 max-w-3xl mx-auto px-4 my-4">
             <Button 
               onClick={scrollToContacts}
               className="bg-[#e67e22] hover:bg-[#d35400] text-white font-semibold px-8 md:px-10 py-5 md:py-6 text-base md:text-lg rounded-lg shadow-lg flex items-center gap-3 w-full sm:w-auto" 
