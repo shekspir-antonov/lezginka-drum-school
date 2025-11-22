@@ -23,7 +23,7 @@ const HeroSection = () => {
       
       <section id="hero" className="relative text-white overflow-hidden px-4 py-20" style={{ 
         paddingTop: '7vh', 
-        paddingBottom: '7vh',
+        paddingBottom: '12vh',
         background: 'linear-gradient(135deg, #a72c1a 0%, #d35400 50%, #a72c1a 100%)'
       }}>
         <Icon name="Music" size={48} className="absolute top-8 left-4 md:top-12 md:left-12 opacity-40" />
