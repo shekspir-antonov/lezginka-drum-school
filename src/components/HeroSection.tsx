@@ -42,7 +42,7 @@ const HeroSection = () => {
           }}>
             Ритмы Гор
           </h2>
-          <p className="text-lg md:text-xl lg:text-2xl mb-5 md:mb-7 leading-relaxed max-w-4xl mx-auto px-4" style={{ fontFamily: "'Open Sans', sans-serif" }}>
+          <p className="text-lg md:text-xl lg:text-2xl mb-5 md:mb-7 leading-relaxed max-w-4xl mx-auto px-4 py-1.5" style={{ fontFamily: "'Open Sans', sans-serif" }}>
             Изучай традиционные кавказские танцы и барабаны с профессиональными мастерами
           </p>
           <div className="flex flex-col items-center justify-center gap-4 max-w-3xl mx-auto px-4">
