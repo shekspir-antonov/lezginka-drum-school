@@ -26,10 +26,10 @@ const HeroSection = () => {
         <Icon name="Music2" size={64} className="absolute bottom-8 right-4 md:bottom-12 md:right-12 opacity-30" />
         
         <div className="container mx-auto text-center relative z-10 max-w-5xl">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 leading-tight text-white" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold md:mb-6 leading-tight text-white my-0 py-0" style={{ fontFamily: "'Montserrat', sans-serif" }}>
             Почувствуй
           </h1>
-          <h2 className="text-5xl md:text-7xl font-bold mb-8 md:mb-10 leading-none pulse-icon px-4" style={{ 
+          <h2 className="text-5xl md:text-7xl font-bold md:mb-10 leading-none pulse-icon px-4 my-[18px]" style={{ 
             fontFamily: "'Montserrat', sans-serif",
             color: '#e67e22',
             WebkitTextStroke: '4px white',
